@@ -13,6 +13,18 @@
         android:theme="@style/Theme.TugasWawa"
         tools:targetApi="31">
         <activity
+            android:name=".NoteAppActivity"
+            android:exported="true" />
+        <activity
+            android:name=".NoteAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".AddEditNoteActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CalculatorActivity"
+            android:exported="false" />
+        <activity
             android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
@@ -21,9 +33,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".CalculatorActivity"
-            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />

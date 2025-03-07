@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".NoteAppActivity">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#ADB2D4"
+        android:title="My Notes"
+        android:titleTextColor="@android:color/white"
+        app:titleTextAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title" />
+
+    <!-- Teks penanda "Note App" -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:gravity="center"
+        android:text="Note App"
+        android:textColor="#ADB2D4"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- RecyclerView to display the list of notes -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1" />
+
+    <!-- Tombol Floating Action Button untuk tambah catatan -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:src="@drawable/plus"
+        app:tint="#ADB2D4" />  <!-- Gunakan app:tint untuk mengganti warna ikon -->
+
+    <!-- Tombol Kembali ke MainActivity -->
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Kembali"
+        android:backgroundTint="#ADB2D4"
+        android:textColor="@android:color/white"/>
+    <!-- Identitas -->
+    <TextView
+        android:id="@+id/tv_Identity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="#ADB2D4"
+        android:textStyle="bold" />
+
+</LinearLayout>

@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         binding.profileName.setOnClickListener {
             val builder = AlertDialog.Builder(this)
             builder.setTitle("Tentang Saya")
-            builder.setMessage("Tentang Saya: Halo, Perkenalkan saya Elsyy")
+            builder.setMessage("Tentang Saya: Halo, Perkenalkan saya Salwaa")
             builder.setPositiveButton("OK") { dialog, _ ->
                 dialog.dismiss()
             }
@@ -39,6 +39,11 @@ class MainActivity : AppCompatActivity() {
 
         binding.buttonProjek1.setOnClickListener {
             val intent = Intent(this, CalculatorActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.buttonProjek2.setOnClickListener {
+            val intent = Intent(this, NoteAppActivity::class.java)
             startActivity(intent)
         }
     }
